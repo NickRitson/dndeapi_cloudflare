@@ -1,0 +1,25 @@
+{
+  "name": "honocf",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "deploy": "wrangler deploy ./src/index.ts",
+    "wrangler-dev": "wrangler dev ./src/index.ts",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.4.0",
+    "@vitest/coverage-v8": "^1.2.0",
+    "dotenv": "^16.3.1",
+    "hono": "^3.12.2",
+    "surrealdb.js": "0.11.0",
+    "surrealdb.node": "^0.3.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231218.0",
+    "@types/bun": "^1.0.0",
+    "vitest": "^1.2.0",
+    "wrangler": "^3.22.4"
+  }
+}
