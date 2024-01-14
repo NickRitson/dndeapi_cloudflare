@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "bun run --hot src/index.ts",
-    "deploy": "wrangler deploy ./src/index.ts",
-    "wrangler-dev": "wrangler dev ./src/index.ts",
+    "deploy": "npx wrangler deploy ./src/index.ts",
+    "wrangler-dev": "npx wrangler dev ./src/index.ts",
     "test": "vitest"
   },
   "dependencies": {
