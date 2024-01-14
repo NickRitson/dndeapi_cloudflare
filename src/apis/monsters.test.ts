@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest';
-import { monsters } from './monsters';
+import { monsters } from './Monsters';
 
 const MOCK_ENV = {
     DND_API_BASE: process.env.DND_API_BASE,
