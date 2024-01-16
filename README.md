@@ -1,5 +1,7 @@
 # DNDE API
-```wip project using bun and hono as alternatives to node and express```
+```wip project using Bun and Hono as alternatives to node and express```
+
+Created as a small project to try out Bun and Hono.
 
 ## Description
 This project is a DNDEAPI that provides APIs for retrieving information about monsters from dnd.
