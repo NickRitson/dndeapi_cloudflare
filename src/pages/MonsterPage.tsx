@@ -207,7 +207,7 @@ interface monsterData {
   image: string,
 }
 
- const MonsterPage: FC<{ monster: monsterData }> = (props: { monster: any }) => {
+ const MonsterPage: FC<{ monster: monsterData, base: string }> = (props: { monster: any, base: string }) => {
 
     return (
       <Layout>
@@ -217,7 +217,7 @@ interface monsterData {
             <div style={styles.gridTwo}>
             <div className="col-2">
                 <div style={styles.imgCard}>
-                  <img src={`${process.env.DND_API_IMAGE}${props.monster.image}`} width="100%" height="350px" alt={props.monster.name} />
+                  <img src={`${props.base}${props.monster.image}`} width="100%" height="350px" alt={props.monster.name} />
                 </div>
               </div>
               <div className="col-1">

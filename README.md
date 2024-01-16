@@ -9,7 +9,7 @@ Additionally will allow custom monster generation. Frontend and API's
 
 ## View
 1. Visit ```https://dndeapi.nritsondev.workers.dev/api/monsters/all```
-2. See API Endpoints below (currently 2 available, all monsters api request for json and a html return for single monster)
+2. See API Endpoints below.
 
 ## Installation
 1. Clone the repository: ```git clone https://github.com/NickRitson/dndeapi_cloudflare.git```
@@ -21,7 +21,7 @@ Additionally will allow custom monster generation. Frontend and API's
 
 ## API Endpoints
 - `/api/monsters`: Retrieves a list of monsters.
-- `/api/monsters/:name`: Retrieves json for a specific monster. - *disabled temporarily*
+- `/api/monsters/:name`: Retrieves json for a specific monster.
 - `/api/monster/:name`: Returns html page with information about specific monster
 
 ## TODO
