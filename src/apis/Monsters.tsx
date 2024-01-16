@@ -24,7 +24,7 @@ monsters.get('/', (c) => {
 monsters.get(
     '/all',
     cache({
-        cacheName: 'dnde-monsters-all',
+        cacheName: 'dnde-monsters',
         cacheControl: 'max-age=86400',
     }), async (c) => {
     const { DND_API_BASE } = env<{ DND_API_BASE: string }>(c);
@@ -51,7 +51,7 @@ monsters.get(
  * @returns A JSON response containing individual monster data.
  */
 monsters.get(
-    '/:name?',
+    '/:name',
     cache({
         cacheName: 'dnde-monsters-name',
         cacheControl: 'max-age=86400',

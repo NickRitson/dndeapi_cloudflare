@@ -2,7 +2,7 @@ import { Hono } from 'hono';
 import { logger } from 'hono/logger';
 
 import { monsters } from './apis/monsters';
-import { monster } from './apis/monster-page';
+import { monster } from './apis/monster';
 
 const app = new Hono().basePath('/api');
 
