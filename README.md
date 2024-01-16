@@ -1,4 +1,4 @@
-# DNDE API
+# DNDE API - Cloudflare Worker
 ```wip project using Bun and Hono as alternatives to node and express```
 
 Created as a small project to try out Bun and Hono.
