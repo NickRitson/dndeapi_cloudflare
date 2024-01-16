@@ -11,15 +11,12 @@ import MonsterPage from '../pages/MonsterPage';
  * @param c - The request context.
  * @returns The HTML representation of the monster page if found, otherwise returns a JSON object with an error message.
  */
-
-// cache({
-//     cacheName: 'dnde-monster',
-//     cacheControl: 'max-age=86400',
-// })
-
 monster.get(
     '/:name',
-    async (c) => {
+    cache({
+        cacheName: 'dnde-monster',
+        cacheControl: 'max-age=86400',
+    }), async (c) => {
         const { DND_API_BASE, DND_API_IMAGE } = env<{ DND_API_BASE: string, DND_API_IMAGE: string }>(c);
         const monsterName = c.req.param('name');
 
